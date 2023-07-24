@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useRouteError } from 'react-router-dom';
 
 const Not_found = () => {
-    const { error, status } = useRouteError()
+    // const { error, status } = useRouteError()
     return (
         // <div className='text-center'>
         //     <img style={{height:400,width:800}} className='mx-auto' src="https://i.ibb.co/ZHPJ7vY/9097-png-860.png" alt="" />
