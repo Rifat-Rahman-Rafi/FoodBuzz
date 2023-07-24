@@ -1,0 +1,29 @@
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .custom-label {
+    color: #1266f1;
+    font-weight: bold;
+  }
+  
+  .custom-checkbox {
+    margin-right: 10px;
+  }
+  
+  .sign-in-button {
+    background-color: #1266f1;
+    color: white;
+  }
+  
+  .register-link {
+    margin-top: 10px;
+  }
+  
+  .social-buttons {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
