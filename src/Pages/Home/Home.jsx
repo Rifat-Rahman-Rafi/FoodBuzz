@@ -1,7 +1,7 @@
 import React from 'react';
-import View_Recipe from '../../component/View_Recipe/View_Recipe';
+
 import Carouseln from '../../component/Carouseln/Carouseln';
-import NewLogin from '../NewLogin/NewLogin';
+
 import AllChef from '../../component/AllChef/AllChef';
 import { Container } from 'react-bootstrap';
 import Connection from '../../component/Connection/Connection';
