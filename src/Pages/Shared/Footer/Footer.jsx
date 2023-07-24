@@ -1,6 +1,5 @@
 import React from "react"
 import { Container } from "react-bootstrap";
-
 const Footer = () => <Container>
 <footer className="footer p-10 bg-neutral text-neutral-content mt-5 rounded">
   <div>

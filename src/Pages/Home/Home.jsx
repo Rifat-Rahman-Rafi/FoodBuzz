@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Carouseln from '../../component/Carouseln/Carouseln';
-
 import AllChef from '../../component/AllChef/AllChef';
 import { Container } from 'react-bootstrap';
 import Connection from '../../component/Connection/Connection';
