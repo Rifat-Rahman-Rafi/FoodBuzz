@@ -21,50 +21,50 @@ const Register = () => {
         //                     setError(error.message);
         //                   });
         //               };
-    const handleRegister = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const name = form.name.value;
-        const photo = form.photo.value;
-        const email = form.email.value;
-        const password = form.password.value;
-        console.log(name, photo, email, password);
-        if (!/(?=.*[A-Z])/.test(password)) {
-            setError('Please enter at least one uppercase');
-            setSuccess('')
-            return;
-        } else if (!/(?=.*[!@#$&*])/.test(password)) {
-            setError('Please enter at least one special character');
-            setSuccess('')
-            return;
-        } else if (!/(?=.*[0-9])/.test(password)) {
-            setError('Please enter at least one number');
-            setSuccess('')
-            return;
-        } else if (!/.{6}/.test(password)) {
-            setError('Please enter minimum 6 character');
-            setSuccess('')
-            return;
-        }
-        createUser(email, password)
-            .then(result => {
-                const loggeduser = result.user;
+    // const handleRegister = (e) => {
+    //     e.preventDefault();
+    //     const form = e.target;
+    //     const name = form.name.value;
+    //     const photo = form.photo.value;
+    //     const email = form.email.value;
+    //     const password = form.password.value;
+    //     console.log(name, photo, email, password);
+    //     if (!/(?=.*[A-Z])/.test(password)) {
+    //         setError('Please enter at least one uppercase');
+    //         setSuccess('')
+    //         return;
+    //     } else if (!/(?=.*[!@#$&*])/.test(password)) {
+    //         setError('Please enter at least one special character');
+    //         setSuccess('')
+    //         return;
+    //     } else if (!/(?=.*[0-9])/.test(password)) {
+    //         setError('Please enter at least one number');
+    //         setSuccess('')
+    //         return;
+    //     } else if (!/.{6}/.test(password)) {
+    //         setError('Please enter minimum 6 character');
+    //         setSuccess('')
+    //         return;
+    //     }
+    //     createUser(email, password)
+    //         .then(result => {
+    //             const loggeduser = result.user;
 
             
                
-                updateInfo(name, photo);
-                setSuccess('Register successfully!!!');
-                setError('')
-                form.reset();
-                logOut();
-                navigate('/login', { replace: true });
-            })
-            .catch(error => {
-                console.log(error.message);
-                setError(error.message);
-                setSuccess('')
-            })
-    }
+    //             updateInfo(name, photo);
+    //             setSuccess('Register successfully!!!');
+    //             setError('')
+    //             form.reset();
+    //             logOut();
+    //             navigate('/login', { replace: true });
+    //         })
+    //         .catch(error => {
+    //             console.log(error.message);
+    //             setError(error.message);
+    //             setSuccess('')
+    //         })
+    // }
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col">

@@ -15,13 +15,6 @@ const View_Recipe = () => {
    <Container>
    
 
-
-
-
-
-
-
-
    <div>
             
             <div className="w-10/12 mx-auto py-40">
