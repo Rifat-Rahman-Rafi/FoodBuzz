@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 
-import Footer from "../Pages/Shared/Footer/Footer";
+
 
 import View_Recipe from "../component/View_Recipe/View_Recipe";
 import Login from "../component/Login/Login";
