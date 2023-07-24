@@ -19,7 +19,8 @@ const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                
             },
             {
                 path: '/login',
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
                 
                 path: '/recipe/:id',
                 element: <PrivateRoute><View_Recipe></View_Recipe></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/recipe/${params.id}`)
+                loader: ({params})=> fetch(`https://test-assignment-server.vercel.app/recipe/${params.id}`)
                 
               },
               
