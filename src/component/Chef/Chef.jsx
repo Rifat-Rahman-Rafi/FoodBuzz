@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import FavoriteButton from '../FavoriteButton/FavoriteButton';
 
 const Chef = ({chef}) => {
     return (
@@ -15,14 +16,20 @@ const Chef = ({chef}) => {
             <h5>Recipes : {chef.numberOfRecipes}</h5>
             <h5>Likes : {chef.likes}</h5>
           </Card.Text>
-          <div className="d-flex justify-content-end">
+
+         <div>
+         <FavoriteButton></FavoriteButton>
+
+         <div className="d-flex justify-content-end">
          
-          <Link to={`/recipe/${chef.id}`}> <Button style={{ border: 'none', background: 'hsl(39, 100%, 61%)',padding:"12px" }} variant="outline-dark">View Recipes</Button></Link>
+         <Link to={`/recipe/${chef.id}`}> <Button style={{ border: 'none', background: 'hsl(39, 100%, 61%)',padding:"12px" }} variant="outline-dark">View Recipes</Button></Link>
+       
+
+
         
-
-
-         
-        </div>
+       </div>
+         </div>
+        
         </Card.Body>
       </Card>
      

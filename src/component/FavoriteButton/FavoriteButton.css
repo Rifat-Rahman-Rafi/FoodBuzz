@@ -1,0 +1,10 @@
+/* Add the following CSS to increase the button size */
+.favorite-button {
+     /* Adjust padding to increase button size */
+    font-size: 50px; /* Adjust font size to increase the size of the favorite icon */
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
